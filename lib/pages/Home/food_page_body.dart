@@ -108,7 +108,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                               BorderRadius.circular(Dimensions.radius20),
                           color: Colors.white38,
                           image: DecorationImage(
-                              image: AssetImage("assetS/image/food0.png"))),
+                              image: AssetImage("assets/image/food0.png"))),
                     ),
                     // text cointainer
                     Expanded(
