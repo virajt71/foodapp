@@ -9,20 +9,16 @@ class PopularFoodDetail extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            left: 0,
-            right: 0,
-            child: Container(
-              width: double.maxFinite,
-              height: 350,
-              decoration: BoxDecoration (
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage(
-                    "assets/image/food0.png"
-                    )
-                  )
-              ),
-          ))
+              left: 0,
+              right: 0,
+              child: Container(
+                width: double.maxFinite,
+                height: 350,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/image/food0.png"))),
+              ))
         ],
       ),
     );

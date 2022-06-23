@@ -5,8 +5,6 @@ import 'package:foodapp/utils/dimensions.dart';
 import 'package:foodapp/widget/big_text.dart';
 import 'package:foodapp/widget/small_text.dart';
 
-
-
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
 
@@ -24,8 +22,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
           //showing the header of the page
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: Dimensions.heigth45, bottom: Dimensions.height15),
-              padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
+              margin: EdgeInsets.only(
+                  top: Dimensions.heigth45, bottom: Dimensions.height15),
+              padding: EdgeInsets.only(
+                  left: Dimensions.width20, right: Dimensions.width20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -44,7 +44,11 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       child: Container(
                     width: Dimensions.heigth45,
                     height: Dimensions.heigth45,
-                    child: Icon(Icons.search, color: Colors.white, size: Dimensions.iconSize24,),
+                    child: Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: Dimensions.iconSize24,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.mainColor,
                       borderRadius: BorderRadius.circular(Dimensions.radius15),
@@ -55,7 +59,8 @@ class _MainFoodPageState extends State<MainFoodPage> {
             ),
           ),
           //showing the body of the page
-          Expanded(child: SingleChildScrollView(
+          Expanded(
+              child: SingleChildScrollView(
             child: FoodPageBody(),
           )),
         ],
