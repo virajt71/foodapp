@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/utils/dimensions.dart';
+import 'package:foodapp/widget/app_icon.dart';
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({Key? key}) : super(key: key);
@@ -13,12 +15,23 @@ class PopularFoodDetail extends StatelessWidget {
               right: 0,
               child: Container(
                 width: double.maxFinite,
-                height: 350,
+                height: Dimensions.popularFoodImgsize,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover,
                         image: AssetImage("assets/image/food0.png"))),
-              ))
+              )),
+          Positioned(
+            top: Dimensions.heigth45,
+            left: Dimensions.width20,
+            right: Dimensions.width20,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                AppIcon(icon: Icons.arrow_back_ios),
+                AppIcon(icon: Icons.shopping_cart)
+              ],
+            ))
         ],
       ),
     );
