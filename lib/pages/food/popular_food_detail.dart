@@ -5,8 +5,6 @@ import 'package:foodapp/widget/app_column.dart';
 import 'package:foodapp/widget/app_icon.dart';
 import 'package:foodapp/widget/big_text.dart';
 import 'package:foodapp/widget/expandable_text_widget.dart';
-import 'package:foodapp/widget/icon_and_text_widget.dart';
-import 'package:foodapp/widget/small_text.dart';
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({Key? key}) : super(key: key);
